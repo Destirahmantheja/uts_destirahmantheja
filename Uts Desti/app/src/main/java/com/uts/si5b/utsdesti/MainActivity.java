@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
                 namalengkap = etNamaLengkap.getText().toString();
                 nomorpendaftaran = etNomorPendaftaran.getText().toString();
-                facebook = cbFacebook.getText().toString();
+                facebook= cbFacebook.getText().toString();
                 instagram = cbInstagram.getText().toString();
                 website = cbWebsite.getText().toString();
 
@@ -58,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     Intent intent = new Intent(MainActivity.this, ActivityResult.class);
                     intent.putExtra("varNamaLengkap", namalengkap);
+                    intent.putExtra("varNomorPendaftaran", nomorpendaftaran);
+                    intent.putExtra("varFacebook", facebook);
+                    intent.putExtra("varInstagram", instagram);
+                    intent.putExtra("varWebsite", website);
+                    startActivity(intent);
+
                     
                 }
             }

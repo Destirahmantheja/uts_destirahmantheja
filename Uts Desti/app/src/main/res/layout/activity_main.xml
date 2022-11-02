@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="16dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -29,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nomor Pendaftaran"
-        android:inputType="text"/>
+        android:inputType="number"/>
     
     <TextView
         android:id="@+id/tv_info"
@@ -62,9 +63,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="DAFTAR"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textAlignment="center"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/cardview_dark_background"
         android:layout_marginTop="30dp"/>
 
 
